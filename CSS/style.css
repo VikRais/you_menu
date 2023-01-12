@@ -5,10 +5,11 @@
 
 /*Управления цветами текста сайта и при наведении*/
 .color_text-body {
+  /*настройка цвета текста в body*/
   color: #f9f9f9;
 }
 
-.color_text-nav_foter {
+.color_text-nav_footer {
   color: rgb(0, 0, 0);
 }
 
@@ -19,14 +20,16 @@
 button:hover {
   background-color: rgb(134, 134, 134);
 
-}/*тут управления цветами закончилось*/
+}
+
+/*тут управления цветами закончилось*/
 
 
-/*управления цветами офорвления nav и footer*/
+
 .nav-fr_bg-clr {
+  /*управления цветами офорвления nav и footer*/
   background-color: rgba(252, 10, 22, 0.5);
-}/*Конец управления цветами офорвления nav и footer*/
-
+}
 
 
 body {
@@ -123,61 +126,58 @@ body {
 */
 
 
-#blinch {
+#loophero {
+  /*Настройка основного изображения LOOP HERO*/
+  display: flex;
+  width: 100%;
+  min-height: 400px;
+  max-height: 400px;
+  position: absolute;
+  z-index: 29;
+  margin-top: 50px;
+}
+
+.bgc_header {
+  /*Контейнер для логотипа и слогана*/
+
+  display: inline-flex;
   position: relative;
-  margin-top: 140px;
-  margin-left: 150px;
+  text-align: center;
+  z-index: 29;
+  margin-top: 50px;
+  height: 300px;
+  width: 100%;
+  padding-top: 100px;
+}
+
+#blinch {
+  /*настройка круглого логотипа*/
   width: 100px;
   height: 100px;
   border: 2px solid rgb(123, 161, 241);
   border-radius: 100%;
-  z-index: 8;
+
+}
+
+#slogan {
+  /*Настройка заголовка приветствия*/
+
 }
 
 #parents {
+  /*Настройка фона 2го заголовка и текса*/
   position: relative;
   display: flex;
   width: 100%;
-  height: 100vh;
+  height: 700px;
   background-color: #333;
-  z-index: 8;
+  z-index: 29;
+  padding-top: 50px;
+  padding-left: 30px;
 }
 
-
-.bgc_header{
-  display: flex;
-  min-width: 100%;
-  height: 400px;
-  background-color: rgba(252, 10, 22, 1);
-  position: relative;
-  z-index: 11;
-  
-}
-
-
-
-#logo {/*Настройка основного изображения LOOP HERO*/
-  display: flex;
-  text-align: center;
-  justify-content: start;
-  background-size: cover;
-  width: 100%;
-  min-height: 400px;
-  position: relative;
-  background-image: url(/parts/logo.png);
-  z-index: 9;
-}
-
-
-
-#slogan {/*Настройка заголовка приветствия*/
-  margin-right: 0;
-  margin-left: 300px;
-  margin-top: 140px;
-}
-
-.paragraf {/*Настройка текста о компании*/
-  margin-left: 400px;
+.paragraf {
+  /*Настройка текста о компании*/
 }
 
 footer {
@@ -188,16 +188,15 @@ footer {
 
 /*Настройка иконок соц. сетей*/
 .fab {
-
-  text-decoration: none;
   font-size: 1.5rem;
   color: rgb(28, 15, 214);
 }
 
 .social-links {
+  width: 100%;
+  height: 50%;
+  display: flex;
+  flex-flow: row;
   justify-content: center;
-  text-align: center;
-  padding-top: 10px;
-  padding-left: 15px;
-  padding-right: 15px;
+
 }
