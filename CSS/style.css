@@ -13,7 +13,6 @@ body {
   width: 100%;
   height: 50px;
   position: fixed;
-  /* Fix the menu to the top of the page */
   top: 0;
   left: 0;
   background-color: rgba(255, 255, 255, 0.5);
@@ -24,26 +23,20 @@ body {
   width: 100%;
   height: 100%;
   list-style-type: none;
-  /* Remove bullet points */
   margin: 0;
   padding: 0;
   display: flex;
-  /* Use flexbox to layout the menu items horizontally */
   align-items: center;
-  /* Center the items vertically */
 }
 
 #menu li {
   flex: 1;
-  /* Make each menu item take up equal amount of space */
   text-align: center;
-  /* Center the text inside the menu item */
 
 }
 
 .b:hover {
   background-color: #ddd;
-  /* Change the background color on hover */
 }
 
 button:hover {
@@ -52,7 +45,6 @@ button:hover {
 
 #menu img {
   margin: 5px;
-  /* Add some space between the image and text */
 }
 
 #menu a {
