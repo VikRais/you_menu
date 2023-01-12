@@ -2,6 +2,7 @@
 <html lang="ru">
 
 <head>
+  <script src="https://kit.fontawesome.com/c677910729.js" crossorigin="anonymous"></script>
   <script src="script.js"></script>
   <link href="CSS/style.css" rel="stylesheet">
   <meta charset="UTF-8">
@@ -11,13 +12,13 @@
 </head>
 
 <body>
-  <div id="menu-container">
+  <div id="menu-container" class="nav-fr_bg-clr">
     <ul id="menu">
-      <li class="b"><a href="#">Главная</a></li>
-      <li class="b"><a href="#">О нас</a></li>
-      <li class="b"><a href="#">Контакты</a></li>
+      <li class="b"><a class="color_text-nav_foter" href="#">Главная</a></li>
+      <li class="b"><a class="color_text-nav_foter" href="#">О нас</a></li>
+      <li class="b"><a class="color_text-nav_foter" href="#">Контакты</a></li>
       <li class="phone_btn-parent b">
-        <img class="phone_btn phone_btn-image" src="parts/phone.svg" /><a class="phone_btn"
+        <img class="phone_btn phone_btn-image" src="parts/phone.svg" /><a class="phone_btn color_text-nav_foter"
           href="tel:+7978-57-35-176">+7978-57-35-176</a>
       </li>
       <li class="sun-btn"><button class="sun_btn_image"><svg id="toggle-theme-button" xmlns="http://www.w3.org/2000/svg"
@@ -29,15 +30,43 @@
     </ul>
   </div>
 
-  <header id="logo">
-    <img id="blinch" src="parts/blinch.png">
+
+  <header>
+    <div class="bgc_header">
+      <div id="logo">
+        <img id="blinch" src="parts/blinch.png">
+        <div>
+          <h1 id="slogan" class="color_text-body">Добро
+            пожаловать<br> к<br>
+            blinch and company</h1>
+        </div>
+      </div>
+    </div>
   </header>
 
   <div id="parents">
+    <h2 class="color_text-body">О компании:</h2>
+    <p class="paragraf color_text-body">Мы, Blinch и компания, рады приветствовать вас в мире наших инди игр.<br> Как
+      разработчики, мы гордимся тем, что
+      смогли создать эти игры для вас, <br>и надеемся,что вы найдете в них много удовольствия. На нашем сайте вы<br>
+      найдете всю информацию о наших играх и новости о нашей компании.<br> Свяжитесь с нами, если у вас есть вопросы или
+      проблемы, мы рады помочь."</p>
+
+
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/mvnxWqYzF1E" frameborder="0"
+      allow="accelerometer; gyroscope; autoplay; clipboard-write; encrypted-media; picture-in-picture"
+      allowfullscreen></iframe>
 
   </div>
+  <footer class="color_text-nav_foter nav-fr_bg-clr">
 
-  <footer>
+    <div class="social-links" style="text-align: center">
+      <a href="https://vk.com/blinch_music" style="display: inline-block"> <i class="fab fa-vk social-links"></i>
+        <br< /a>
+          <a href="https://twitter.com/_FQteam" style="display: inline-block"> <i
+              class="fab fa-twitter social-links"></i></a>
+    </div>
+
     blinsh VS Bichrider
 
   </footer>

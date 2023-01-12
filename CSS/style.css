@@ -3,20 +3,45 @@
   margin: 0;
 }
 
+/*Управления цветами текста сайта и при наведении*/
+.color_text-body {
+  color: #f9f9f9;
+}
+
+.color_text-nav_foter {
+  color: rgb(0, 0, 0);
+}
+
+.b:hover {
+  background-color: #ddd;
+}
+
+button:hover {
+  background-color: rgb(134, 134, 134);
+
+}/*тут управления цветами закончилось*/
+
+
+/*управления цветами офорвления nav и footer*/
+.nav-fr_bg-clr {
+  background-color: rgba(252, 10, 22, 0.5);
+}/*Конец управления цветами офорвления nav и footer*/
+
+
+
 body {
   height: 100vh;
   width: 100%;
 }
 
 #menu-container {
-  position: relative;
+  position: absolute;
   width: 100%;
   height: 50px;
   position: fixed;
   top: 0;
   left: 0;
-  background-color: rgba(255, 255, 255, 0.5);
-  z-index: 10;
+  z-index: 30;
 }
 
 #menu {
@@ -35,20 +60,11 @@ body {
 
 }
 
-.b:hover {
-  background-color: #ddd;
-}
-
-button:hover {
-  background-color: rgb(134, 134, 134);
-}
-
 #menu img {
   margin: 5px;
 }
 
 #menu a {
-  color: black;
   text-decoration: none;
   font-size: 22px;
 }
@@ -71,7 +87,6 @@ button:hover {
 }
 
 .phone_btn {
-  color: black;
   font-size: 1px;
   text-decoration: none;
   vertical-align: middle;
@@ -91,7 +106,7 @@ button:hover {
   border-radius: 100%;
 }
 
-
+/*
 :root {
   --primary-color: #f9f9f9;
   --secondary-color: #222;
@@ -105,30 +120,21 @@ button:hover {
   --text-color: #f9f9f9;
   --background-color: #222;
 }
+*/
 
-#logo {
-  display: flex;
-  justify-content: start;
-  background-size: cover;
-  width: 100%;
-  height: 400px;
-  position: relative;
-  background-image: url(/parts/logo.png);
-  z-index: 9;
-}
 
 #blinch {
   position: relative;
-  z-index: 8;
   margin-top: 140px;
   margin-left: 150px;
   width: 100px;
   height: 100px;
   border: 2px solid rgb(123, 161, 241);
   border-radius: 100%;
+  z-index: 8;
 }
 
-#parents{
+#parents {
   position: relative;
   display: flex;
   width: 100%;
@@ -138,11 +144,60 @@ button:hover {
 }
 
 
-footer{
-  text-align: center;
-  width: 100%;
-  height: 50px;
-  background-color: rgba(255, 255, 255, 0.5);
+.bgc_header{
+  display: flex;
+  min-width: 100%;
+  height: 400px;
+  background-color: rgba(252, 10, 22, 1);
+  position: relative;
+  z-index: 11;
+  
 }
 
 
+
+#logo {/*Настройка основного изображения LOOP HERO*/
+  display: flex;
+  text-align: center;
+  justify-content: start;
+  background-size: cover;
+  width: 100%;
+  min-height: 400px;
+  position: relative;
+  background-image: url(/parts/logo.png);
+  z-index: 9;
+}
+
+
+
+#slogan {/*Настройка заголовка приветствия*/
+  margin-right: 0;
+  margin-left: 300px;
+  margin-top: 140px;
+}
+
+.paragraf {/*Настройка текста о компании*/
+  margin-left: 400px;
+}
+
+footer {
+  text-align: center;
+  width: 100%;
+  height: 100px;
+}
+
+/*Настройка иконок соц. сетей*/
+.fab {
+
+  text-decoration: none;
+  font-size: 1.5rem;
+  color: rgb(28, 15, 214);
+}
+
+.social-links {
+  justify-content: center;
+  text-align: center;
+  padding-top: 10px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
